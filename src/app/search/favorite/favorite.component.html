@@ -1,0 +1,17 @@
+<div class="container" style="width: 90%;">
+<table class="table table-striped">
+    <thead>
+    <tr><th *ngFor="let head of headElements" scope="col" style="background-color: rgb(94, 138, 164);">{{ head }}</th></tr>
+    </thead>
+    
+    <tbody>
+        <tr *ngFor="let el of elements">
+            <th scope="row">{{el.id}}</th>
+            <td><img src="{{el.image}}" alt="" style="width: 40px;"></td>
+            <td><a href="" (click)="showForecast(el.city, el.state)" ngbTooltip="{{el.city}}" style="color: blue;">{{el.city}}</a></td>
+            <td>{{el.state}}</td>
+            <td><button><i class="material-icons" style="color: rgb(206, 157, 54);">delete</i></button></td>
+        </tr>
+    </tbody>
+</table>
+</div>

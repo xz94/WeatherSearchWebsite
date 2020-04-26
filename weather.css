@@ -1,0 +1,62 @@
+WeatherSearch {
+    display: block;
+    width: 900px;
+    height: 450px;
+    background-color: #567991;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+#formTitle {
+    font-size: 200%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#formStreet {
+    padding-top:30px;
+    padding-left:100px;
+}
+
+#formCity {
+    padding-left:100px;
+}
+
+#formState {
+    padding-left:100px;
+}
+
+#formCheck {
+    padding-left:120px;
+}
+
+#inputCity  {
+    width: 70%;
+}
+
+#inputStreet {
+    width: 70%;
+}
+
+#selectState {
+    width: 40%;
+}
+
+#searchButton {
+    position: relative;
+    left: 120px;
+    top: 20px;
+}
+
+#clearButton {
+    position: relative;
+    left: 130px;
+    top: 20px;
+}
+
+.material-icons {
+    position: relative;
+    top: 4px;
+}

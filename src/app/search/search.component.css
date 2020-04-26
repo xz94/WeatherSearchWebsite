@@ -1,0 +1,91 @@
+#firstContainer {
+    background-color: #518ba7;
+    border-radius: 6px;
+    display: block;
+    box-shadow: 5px 5px 2px gray;
+    border-color: black;
+}
+
+#searchForm {
+    color: white;
+    margin: auto;
+    /* margin-top: 40px; */
+}
+
+#formTitle {
+    font-size: 220%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+.requiredInput {
+    color: red;
+}
+
+
+#searchButton {
+    color: gray;
+}
+
+#clearButton {
+    position: relative;
+    color: gray;
+    font-size: 100%;
+
+}
+
+.material-icons {
+    position: relative;
+    top: 4px;
+    left: 4px;
+}
+
+.helpMessage {
+    color: red;
+}
+
+#favoContainer {
+
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border-color: black;
+}
+
+
+
+#resultsBtn {
+
+    background-color: #518ba7;
+    color: white;
+}
+
+
+
+a {
+    color: black;
+}
+
+.nav-item {
+    /* background-color: white; */
+    padding-top: 10px;
+}
+
+#twitter {
+    width: 5%;
+}
+
+#navbar {
+    background-color: white;
+}
+
+.table-striped  tbody  tr:nth-child(odd) {
+    background-color: rgb(152, 206, 238);
+  }
+
+  .table-striped  tbody  tr:nth-child(even) {
+    background-color: rgb(94, 138, 164);
+  }

@@ -1,0 +1,45 @@
+<button hidden #trigger type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+<div class="col-sm-12 col-12">
+    <div id="chartContainer" style="width: 100%;"></div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog" style="width: 100%;">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: rgb(94, 138, 164);">
+                <h4 class="modal-title">{{ date }}</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body" style="background-color: rgb(153, 208, 240);"> 
+                <div class="row">
+                    <div class="col">
+                        <div style="font-size: 150%; padding-top: 10px; padding-left: 20px;">{{ city }}</div>
+                        <div style="font-size: 250%; padding-left: 20px;">{{ temperature }} 
+                            <img src="https://cdn3.iconfinder.com/data/icons/virtual-notebook/16/button_shape_oval-512.png" style="width: 13px; padding-bottom: 35px;">
+                            F
+                        </div>
+                        <div style="padding-left: 20px; font-size: 110%;">{{ summary }}</div>
+                    </div>
+                    <div class="col" style=" margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    display: table-cell;
+                    vertical-align: middle"><img src="{{ icon }}" style="width: 100px;"></div>
+                </div>
+                <div>
+                    <hr>
+                </div>
+                <div style="float:right;">
+                    <div>Preciption: {{ preciption }}</div>
+                    <div>Chance of Rain: {{ chanceOfRain }} %</div>
+                    <div>Wind Speed: {{ windSpeed }} mph</div>
+                    <div>Humidity: {{ humidity }} %</div>
+                    <div>Visibility: {{ visibility }} miles</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

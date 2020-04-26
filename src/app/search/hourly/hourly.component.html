@@ -1,0 +1,30 @@
+<script src="node_modules/chart.js/Chart.min.js"></script>
+<script src="node_modules/chart.js/src/chart.js"></script>
+<script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+
+<div class="container col-sm-10 col-12">
+        <div class="form-group row" id="formState">
+                <select class="form-control col-sm-4 col-12 " id="dropDown" (change)=changeCate($event.target.value) style="margin-top: 20px;">
+                    <option value="temperature" [selected] = "true">Temperature</option>
+                    <option value="pressure">Pressure</option>
+                    <option value="humidity">Humidity</option>
+                    <option value="ozone">Ozone</option>
+                    <option value="visibility">Visibility</option>
+                    <option value="windSpeed">Wind Speed</option>
+                </select> 
+        </div>
+        
+        <div>
+            <div *ngIf="showTemp" style="display: block" class="row col-sm-12 col-12">
+              <canvas baseChart
+                      [datasets]="barChartData"
+                      [labels]="barChartLabels"
+                      [options]="barChartOptions"
+                      [chartType]="barChartType">
+              </canvas>
+            </div>
+        </div>
+</div>
+
+
+<!-- <div>{{ test }}</div> -->
